@@ -1,0 +1,270 @@
+$blue: #005
+$blue-back: #001954
+$btn: #05c48A
+$btn-hover: #09b47f
+$white: #ffffff
+$legal-text: #1B1B1F
+
+$font-din: DINPro-CondLight, sans-serif
+$font-favText: FavbetText-Regular, sans-serif //400
+$font-suisseintl-reg: SuisseIntl-Regular, sans-serif //400
+$font-favbet-display-wide: FavbetDisplay-WideBold, sans-serif //700
+$font-favbet-display-norm: FavbetDisplay-NormalBold, sans-serif //700
+$font-roboto-cond: RobotoCondensed-Bold, sans-serif //700
+
+body
+  -webkit-tap-highlight-color: transparent
+  overscroll-behavior: none
+  background: $blue-back
+  img
+    max-width: none
+    width: 100%
+    height: auto
+.main-link
+  position: absolute
+  width: 100%
+  height: 100%
+  cursor: pointer
+.fav-page
+  z-index: 10
+  pointer-events: none
+  width: 100%
+  height:  100%
+  overflow: hidden
+  position: relative
+  background: $blue-back
+  &:before
+    content: ''
+    position: absolute
+    left: 5%
+    top: 50%
+    transform: translateY(-50%)
+    width: 2500px
+    height: 2500px
+    background: url('../img/spin.jpg') no-repeat 50% 50%/cover
+    animation: spin 40s linear infinite
+  &:after
+    content: ''
+    background: linear-gradient(0deg, #001954 31.51%, rgba(0, 25, 84, 0.00) 100%)
+    width: 100%
+    height: 30%
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 4
+
+  &__main
+    display: flex
+    z-index: 1
+    height: 100%
+    margin: 0 auto
+    justify-content: space-between
+  &__left
+    z-index: 4
+    //min-width: 695px
+    margin-left: 50px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &-logo
+      width: 56%
+    &-cont
+      margin-top: -15%
+      height: 68%
+      max-height: 780px
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-around
+  &__bonus
+    display: flex
+    flex-direction: column
+    &-cont
+      display: flex
+      flex-direction: column
+      width: 778px
+      padding-bottom: 60px
+    &-item
+      color: $white
+      text-transform: uppercase
+      white-space: nowrap
+      display: flex
+      justify-content: center
+      align-items: center
+      &.title
+        font-family: $font-favbet-display-wide
+        font-size: 118px
+        letter-spacing: 2.36px
+        margin-bottom: 10px
+        span
+          font-family: $font-favText
+          font-size: 41px
+          color: $white
+          margin: -50px 0 0 15px
+      &.info
+        font-family: $font-favbet-display-norm
+        font-size: 86px
+        letter-spacing: 1.72px
+        background:  url('../img/block-pink.png') no-repeat 50% 50%/cover
+        background-size: 100% 100%
+        width: 695px
+        height: 124px
+        align-self: flex-start
+        span
+          font-family: inherit
+          font-size: 56px
+          letter-spacing: 1.12px
+          margin-top: 15px
+          margin-right: 30px
+      &.fs
+        font-family: $font-favbet-display-wide
+        font-size: 86px
+        line-height: 170px
+        background:  url('../img/block-blue.png') no-repeat 50% 50%/cover
+        background-size: 100% 100%
+        width: 507px
+        height: 124px
+        align-self: flex-end
+  &__btn
+    pointer-events: initial
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $btn
+    min-width: 298px
+    min-height: 72px
+    border-radius: 10.5px
+    transition: .4s ease-in-out
+    text-transform: uppercase
+    color: $blue
+    font-size: 32px
+    font-family: $font-roboto-cond
+    &:hover
+      cursor: pointer
+      background: $btn-hover
+    &:after
+      content: ''
+      position: absolute
+      left: -10%
+      top: -200%
+      background: url('../img/star.png') no-repeat 50% 50%/cover
+      width: 368px
+      height: 368px
+      animation: spinLeft 20s linear infinite
+  &__right
+    position: relative
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    margin-bottom: -4px
+  &__sem
+    z-index: 3
+    width: 150vh
+    margin-left: -290px
+  &__info
+    position: absolute
+    bottom: 10px
+    z-index: 5
+    width: 90%
+    left: 50%
+    transform: translateX(-50%)
+    &-item
+      font-family: $font-suisseintl-reg
+      font-size: 14px
+      letter-spacing: -0.14px
+      line-height: normal
+      color: $white
+      text-align: center
+      &:nth-child(1)
+        margin-bottom: 14px
+  &__decor
+    width: 50%
+    position: absolute
+    right: 0
+    height: 100%
+    top: -20px
+    &-coin-1, &-coin-2, &-coin-3, &-coin-4
+      position: absolute
+      height: auto
+    &-coin-1
+      width: 800px
+      bottom: -400px
+      left: -40%
+      animation: spin 40s linear infinite
+      z-index: 4
+    &-coin-2
+      width: 400px
+      left: -40%
+      top: 0
+      animation: diagonalRain 4s linear infinite
+    &-coin-3
+      z-index: 3
+      width: 145px
+      left: 0
+      top: 0
+      animation: fall 4s linear infinite
+    &-coin-4
+      width: 145px
+      right: 10%
+      top: 0
+      animation: fallRightToLeft 3s linear infinite
+  &__legal
+    position: absolute
+    pointer-events: none
+    display: block
+    text-align: center
+    background: $white
+    font-family: $font-din
+    font-size: 4.55vw
+    color: $legal-text
+    z-index: 5
+    padding: 0 10px
+
+@keyframes spin
+  from
+    transform: translateY(-50%) rotate(0deg)
+  to
+    transform: translateY(-50%) rotate(360deg)
+
+@keyframes spinLeft
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(-360deg)
+
+@keyframes diagonalRain
+  0%
+    transform: translate(-5%)
+    top: -20%
+    opacity: 1
+  80%
+    transform: translate(370%)
+    top: 100%
+    opacity: 1
+  100%
+    transform: translate(370%)
+    top: 100%
+    opacity: 0
+
+@keyframes fallRightToLeft
+  0%
+    transform: translateX(100%)
+    top: -20%
+    opacity: 1
+  80%
+    transform: translateX(-50%)
+    top: 100%    // кінець внизу контейнера
+    opacity: 1
+  100%
+    transform: translateX(-50%)
+    top: 100%
+    opacity: 0    // зникнення перед повтором
+
+@keyframes fall
+  0%
+    top: -25%
+  100%
+    top: 100%
