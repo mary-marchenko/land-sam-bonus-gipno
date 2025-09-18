@@ -1,882 +1,1050 @@
-//@media screen and (min-width: 2500px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 11%
-//      &-cont
-//        transform: scale(1.4)
-//        transform-origin: center
-//    &__bottom
-//      transform: scale(1.2)
-//      transform-origin: center
-//    &__right
-//      margin-bottom: 5px
-//    &__decor
-//      width: 100%
-//    &__cleo
-//      margin-right: -240px
-//      width: 192vh
-//
-//@media screen and (min-width: 2000px) and (max-width: 2400px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 11%
-//      &-cont
-//        transform: scale(1.15)
-//        transform-origin: center
-//    &__bottom
-//      transform: scale(1.1)
-//      transform-origin: center
-//    &__decor
-//      &-coin-3
-//        width: 15%
-//        right: 10%
-//
-//@media screen and (max-width: 1920px) and (orientation: landscape) and (max-height: 1080px)
-//  .fav-page
-//    &__left
-//      margin-left: 5%
-//
-//@media screen and (max-width: 1920px) and (orientation: landscape) and (max-height: 960px)
-//  .fav-page
-//    &__left
-//      margin-left: 7%
-//
-//@media screen and (max-width: 1830px) and (orientation: landscape)
-//  .fav-page
-//    &__decor
-//      width: 100%
-//
-//@media screen and (max-width: 1707px) and (max-height: 800px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-top: 2%
-//      &-cont
-//        height: 80%
-//        transform: scale(0.9)
-//        transform-origin: top
-//    &__bottom
-//      font-size: 13px
-//      line-height: 20px
-//      width: 550px
-//
-//
-//@media screen and (max-width: 1706px) and (min-height: 1000px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        height: 54%
-//    &__decor
-//      width: 100%
-//    &__cleo
-//      margin-left: -620px
-//
-//    //  margin-top: 266px
-//
-//@media screen and (max-width: 1680px) and (min-height: 1000px) and (orientation: landscape)
-//  .fav-page
-//    &__decor
-//      width: 93%
-//      margin: 40px 50px
-//    &__cleo
-//      margin-left: -500px
-//
-//@media screen and (max-width: 1600px) and (max-height: 855px) and (orientation: landscape)
-//  .fav-page
-//    &__decor
-//      width: 107%
-//
-//
-//@media screen and (max-width: 1536px) and (max-height: 864px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 4%
-//
-//@media screen and (max-width: 1536px) and (max-height: 730px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 6%
-//
-//@media screen and (max-width: 1512px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.85)
-//        transform-origin: center
-//        height: 75%
-//    //&__cleo
-//    //  margin-top: 120px
-//    //  width: 111vh
-//
-//@media screen and (max-width: 1470px) and (max-height: 707px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.75)
-//        height: 550px
-//      &-logo
-//        flex-shrink: 0
-//    &__decor
-//      width: 115%
-//    &__bonus
-//      flex-shrink: 0
-//      &-fc, &-info
-//        flex-shrink: 0
-//      &-fc
-//        margin-bottom: -15px
-//    &__btn
-//      flex-shrink: 0
-//    &__bottom
-//      width: 475px
-//      font-size: 11px
-//      line-height: 16px
-//      bottom: 2%
-//
-//@media screen and (max-width: 1440px) and (max-height: 900px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 20px
-//    &__bottom
-//      width: 520px
-//      font-size: 12px
-//      line-height: 18px
-//    &__decor
-//      width: 113%
-//    &__cleo
-//      margin-left: -450px
-//    //  width: 96vh
-//
-//@media screen and (max-width: 1440px) and (max-height: 885px) and (orientation: landscape)
-//  .fav-page
-//    &__decor
-//      width: 101%
-//
-//@media screen and (max-width: 1440px) and (max-height: 840px) and (orientation: landscape)
-//  .fav-page
-//    &__decor
-//      width: 111%
-//    &__cleo
-//      margin-left: -335px
-//
-//@media screen and (width: 1400px) and (max-height: 710px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      margin-left: -280px
-//    &__decor
-//      margin-top: 20px
-//
-//@media screen and (max-width: 1376px) and (max-height: 1032px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 2%
-//    &__cleo
-//      margin-left: -580px
-//
-//
-//@media screen and (max-width: 1376px) and (max-height: 958px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 30px
-//    &__bottom
-//      font-size: 12px
-//      line-height: 17px
-//      width: 520px
-//    &__decor
-//      width: 106%
-//      height: 100%
-//      margin-top: 3%
-//
-//@media screen and (max-width: 1376px) and (max-height: 913px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      margin-left: -515px
-//
-//
-//@media screen and (max-width: 1368px) and (max-height: 768px) and (orientation: landscape)
-//  .fav-page
-//    &__main
-//      display: flex
-//      z-index: 1
-//      height: 100%
-//      width: 1368px
-//      margin: 0 auto
-//      justify-content: space-around
-//    &__left
-//      width: 437px
-//      margin-left: 0
-//      &-cont
-//        transform: scale(1)
-//        max-height: 670px
-//      &-logo
-//        width: 85%
-//    &__bonus
-//      &-fc
-//        font-size: 130px
-//        line-height: 130px
-//      &-info
-//        font-size: 56px
-//    &__btn
-//      min-width: 260px
-//      min-height: 64px
-//      font-size: 18px
-//    &__bottom
-//      font-size: 10px
-//      line-height: 16px
-//      text-align: center
-//      width: 437px
-//    &__decor
-//      width: 114%
-//    &__cleo
-//      margin-left: -330px
-//
-//
-//@media screen and (max-width: 1368px) and (max-height: 707px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.9)
-//        transform-origin: center
-//        height: 450px
-//    &__cleo
-//      margin-left: -240px
-//
-//@media screen and (max-width: 1368px) and (max-height: 650px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      margin-left: -180px
-//
-//@media screen and (max-width: 1366px) and (min-height: 1000px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.9)
-//        transform-origin: center
-//        height: 650px
-//    &__right
-//      margin-left: -55px
-//    &__cleo
-//      margin-left: -530px
-//    &__bottom
-//      width: 520px
-//      font-size: 12px
-//      line-height: 20px
-//
-//@media screen and (width: 1366px) and (min-height: 900px) and (max-height: 950px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      margin-left: -528px
-//      margin-right: -338px
-//      width: 261%
-//
-//@media screen and (max-width: 1317px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 4%
-//    &__cleo
-//      width: 160%
-//      margin-left: -280px
-//    &__decor
-//      width: 116%
-//      height: 90%
-//
-//@media screen and (max-width: 1305px) and (min-height: 1000px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.8)
-//    &__right
-//      margin-left: -100px
-//      width: 100%
-//    &__cleo
-//      position: absolute
-//      width: 199%
-//      right: -305px
-//    &__decor
-//      width: 114%
-//      right: 10px
-//      margin: 0
-//      &-coin-2
-//        right: 20%
-//        top: 19%
-//      &-coin-3
-//        right: 0
-//      &-coin-4
-//        right: 13%
-//      &-chip-3
-//        right: 20%
-//
-//@media screen and (max-width: 1280px) and (orientation: landscape)
-//  .fav-page
-//    &__main
-//      width: 100%
-//    &__left
-//      margin-left: 3%
-//      &-cont
-//        transform: scale(0.8)
-//    &__right
-//      margin-left: -80px
-//      width: 100%
-//    &__cleo
-//      width: 184%
-//      position: absolute
-//      right: -270px
-//    &__decor
-//      width: 110%
-//      height: 100%
-//      margin-top: 8%
-//      &-coin-2
-//        right: 20%
-//        top: 19%
-//      &-coin-3
-//        right: 0
-//      &-coin-4
-//        right: 13%
-//      &-chip-3
-//        right: 20%
-//
-//
-//@media screen and (max-width: 1280px) and (max-height: 768px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.95)
-//    &__cleo
-//      width: 174%
-//
-//@media screen and (max-width: 1280px) and (max-height: 700px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 160%
-//      right: -171px
-//
-//@media screen and (max-width: 1280px) and (max-height: 675px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.8)
-//    &__cleo
-//      width: 150%
-//      right: -110px
-//
-//@media screen and (max-width: 1280px) and (max-height: 600px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 135%
-//      right: -100px
-//
-//@media screen and (max-width: 1259px) and (min-height: 1000px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 20px
-//    &__right
-//      margin-left: -92px
-//    &__cleo
-//      width: 223%
-//      right: -399px
-//
-//@media screen and (max-width: 1210px) and (max-height: 760px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 200%
-//      right: -310px
-//
-//@media screen and (max-width: 1210px) and (max-height: 719px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 180%
-//      right: -220px
-//
-//@media screen and (max-width: 1205px) and (max-height: 585px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 150%
-//      right: -80px
-//
-//@media screen and (max-width: 1180px) and (max-height: 834px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.75)
-//    &__right
-//      margin-left: -80px
-//    &__cleo
-//      width: 220%
-//      right: -330px
-//
-//@media screen and (max-width: 1180px) and (max-height: 712px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.9)
-//    //&__cleo
-//    //  margin-top: 120px
-//
-//@media screen and (max-width: 1180px) and (max-height: 701px) and (orientation: landscape)
-//  .fav-page
-//    &__right
-//      margin-left: -120px
-//    &__cleo
-//      width: 180%
-//      right: -200px
-//
-//@media screen and (max-width: 1120px) and (max-height: 834px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 15px
-//      &-cont
-//        transform: scale(0.7)
-//    &__cleo
-//      width: 230%
-//
-//@media screen and (max-width: 1120px) and (max-height: 768px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      width: 50%
-//      min-width: 50%
-//      margin-left: 0
-//      &-cont
-//        transform: scale(0.85)
-//    &__right
-//      margin-left: -110px
-//    &__cleo
-//      width: 200%
-//      right: -290px
-//
-//@media screen and (max-width: 1114px) and (max-height: 720px) and (orientation: landscape)
-//  .fav-page
-//    &__right
-//      margin-left: -70px
-//
-//@media screen and (max-width: 1080px) and (max-height: 720px) and (orientation: landscape)
-//  .fav-page
-//    &__decor
-//      width: 116%
-//    &__cleo
-//      right: -250px
-//
-//@media screen and (max-width: 1037px) and (max-height: 768px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.8)
-//    &__right
-//      margin-left: -90px
-//
-//@media screen and (max-width: 1024px) and (max-height: 660px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 180%
-//      right: -200px
-//
-//@media screen and (max-width: 1010px) and (max-height: 820px) and (orientation: landscape)
-//  .fav-page
-//    &__bottom
-//      width: 420px
-//      font-size: 10px
-//      line-height: 16px
-//    &__right
-//      margin-left: -140px
-//    &__left
-//      margin-left: -25px
-//      &-cont
-//        transform: scale(0.67)
-//    &__cleo
-//      width: 227%
-//      right: -340px
-//
-//@media screen and (max-width: 970px) and (max-height: 768px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 5px
-//      &-cont
-//        transform: scale(0.77)
-//    &__right
-//      margin-left: -90px
-//    &__bottom
-//      width: 380px
-//      font-size: 9px
-//      line-height: 14px
-//    &__decor
-//      width: 110%
-//    &__cleo
-//      width: 210%
-//      right: -280px
-//
-//@media screen and (max-width: 829px) and (max-height: 690px) and (orientation: landscape)
-//  .fav-page
-//    &__right
-//      margin-left: -80px
-//    &__cleo
-//      width: 220%
-//    &__decor
-//      width: 100%
-//      height: 97%
-//      margin-top: 0
-//
-//@media screen and (max-width: 829px) and (max-height: 540px) and (orientation: landscape)
-//  .fav-page
-//    &__bottom
-//      font-size: 8px
-//      line-height: 13px
-//      width: 350px
-//    &__left
-//      &-cont
-//        transform: scale(0.6)
-//    &__decor
-//      width: 110%
-//    &__cleo
-//      width: 180%
-//      right: -180px
-//
-//@media screen and (max-width: 720px) and (max-height: 540px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 195%
-//
-//
-//@media screen and (max-width: 708px) and (max-height: 687px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 10px
-//      &-cont
-//        transform: scale(0.6)
-//    &__bottom
-//      font-size: 7px
-//      line-height: 12px
-//      width: 320px
-//    &__right
-//      margin-left: -117px
-//    &__decor
-//      width: 65%
-//
-//@media screen and (max-width: 691px) and (max-height: 687px) and (orientation: landscape)
-//  .fav-page
-//    &__right
-//      margin-left: -90px
-//    &__cleo
-//      width: 230%
-//    //  margin-top: 185px
-//    &__decor
-//      width: 115%
-//
-/////***************************** Portrait ****************************************/
-//@media screen and (max-width: 1300px) and (orientation: portrait)
-//  .fav-page
-//    &__main
-//      flex-direction: column
-//    &__left
-//      margin: 20px auto 0
-//      height: 100%
-//      z-index: 4
-//      align-items: flex-start
-//      &-cont
-//        height: 100%
-//        margin-top: 0
-//        max-height: 100%
-//        justify-content: flex-start
-//      &-logo
-//        width: 100%
-//    &__bonus
-//      margin-top: 30px
-//      align-items: center
-//      &-fc
-//        margin-bottom: 20px
-//    &__btn
-//      position: absolute
-//      bottom: 100px
-//    &__bottom
-//      bottom: 20px
-//      width: 85%
-//    &__left
-//      width: 100%
-//    &__right
-//      position: absolute
-//      bottom: 0
-//      justify-content: center
-//      height: 100%
-//    &__cleo
-//      height: 77%
-//      width: auto
-//      min-width: 200%
-//      display: flex
-//      justify-content: center
-//      margin: 0 auto
-//      img
-//        height: 100%
-//        width: fit-content
-//        display: block
-//        object-fit: contain
-//    &__decor
-//      &-chip
-//        &-1
-//          width: 17%
-//          height: 150px
-//          left: 0
-//          bottom: 0
-//          top: 20%
-//        &-2
-//          display: none
-//        &-3
-//          width: 20%
-//          height: 146px
-//          right: 100px
-//          top: 50%
-//      &-coin
-//        &-1
-//          width: 13%
-//          top: 50%
-//          left: 18%
-//        &-2
-//          width: 23%
-//          top: 29%
-//          right: 2%
-//        &-3
-//          width: 22%
-//          bottom: -80px
-//          right: -20px
-//          z-index: 3
-//        &-4
-//          display: block
-//          height: 150px
-//          width: 15%
-//          z-index: 3
-//          top: 55%
-//          right: initial
-//          left: 5%
-//
-//@media screen and (max-width: 1300px) and (max-height: 1421px) and (orientation: portrait)
-//  .fav-page
-//    &__bonus
-//      margin-top: 20px
-//      &-fc
-//        font-size: 130px
-//        line-height: 130px
-//        margin-bottom: 20px
-//      &-info
-//        font-size: 55px
-//        line-height: 55px
-//    &__bottom
-//      font-size: 12px
-//      line-height: 19px
-//    &__cleo
-//      height: 73%
-//
-//
-//@media screen and (max-width: 1000px) and (orientation: portrait)
-//  .fav-page
-//    &__bottom
-//      font-size: 10px
-//      line-height: 16px
-//    &__cleo
-//      height: 85%
-//
-//@media screen and (max-width: 912px) and (orientation: portrait)
-//  .fav-page
-//    &__cleo
-//      min-width: 250%
-//      height: 75%
-//    &__bonus
-//      &-fc
-//        font-size: 110px
-//        line-height: 110px
-//        margin-bottom: 10px
-//      &-info
-//        font-size: 46px
-//        line-height: 46px
-//    &__btn
-//      border-radius: 4px
-//      min-width: 260px
-//      min-height: 64px
-//      font-size: 18px
-//      line-height: 18px
-//      letter-spacing: 1.44px
-//
-//@media screen and (max-width: 901px) and (min-height: 1470px) and (orientation: portrait)
-//  .fav-page
-//    &__cleo
-//      height: 78%
-//      min-width: 295%
-//
-//
-//@media screen and (max-width: 768px) and (max-height: 1000px) and (orientation: portrait)
-//  .fav-page
-//    &__cleo
-//      height: 70%
-//    &__decor
-//      &-chip-3
-//        width: 15%
-//
-//@media screen and (max-width: 740px) and (orientation: portrait)
-//  .fav-page
-//    &__bottom
-//      font-size: 9px
-//      line-height: 15px
-//      bottom: 15px
-//
-//@media screen and (max-width: 740px) and (max-height: 829px) and (orientation: portrait)
-//  .fav-page
-//    &__bonus
-//      margin-top: 5px
-//      &-fc
-//        font-size: 100px
-//        line-height: 100px
-//        margin-bottom: 5px
-//      &-info
-//        font-size: 42px
-//        line-height: 42px
-//    &__left
-//      &-logo
-//        width: 90%
-//    &__btn
-//      bottom: 70px
-//
-//@media screen and (max-width: 690px) and (min-width: 500px) and (max-height: 720px) and (orientation: portrait)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.85)
-//        transform-origin: top
-//    &__btn
-//      bottom: -20px
-//      transform: scale(0.9)
-//      transform-origin: top
-//    &__bottom
-//      bottom: 5px
-//
-//@media screen and (max-width: 660px) and (orientation: portrait)
-//  .fav-page
-//    &__left
-//      min-width: 400px
-//    &__bottom
-//      font-size: 7.5px
-//      line-height: 13px
-//      width: 90%
-//
-//@media screen and (max-width: 600px) and (orientation: portrait)
-//  .fav-page
-//    &__right
-//      width: 100%
-//
-/////***************************** Mobile ****************************************/
-//@media screen and (max-width: 500px) and (orientation: portrait)
-//  .fav-page
-//    &__left
-//      min-width: 100%
-//      margin-top: 19px
-//      animation: fade 1s ease-out forwards
-//      &-logo
-//        width: 170px
-//    &__bonus
-//      margin-top: 10px
-//      &-fc
-//        font-size: 80px
-//        line-height: 80px
-//        margin-bottom: 10px
-//      &-info
-//        font-size: 34px
-//        line-height: 34px
-//    &__btn
-//      min-width: 234px
-//      min-height: 54px
-//      bottom: 100px
-//      &.noios-padding
-//        padding-top: 4px
-//    &__right
-//      bottom: 88px
-//    &__cleo
-//      height: 63.5%
-//    &__decor
-//      height: 95%
-//      &-chip-1
-//        width: 127px
-//        top: 35%
-//        left: -10%
-//      &-chip-3
-//        width: 75px
-//        top: 57%
-//        right: 20px
-//      &-coin-1
-//        width: 64px
-//        top: 68%
-//        left: 2%
-//      &-coin-2
-//        width: 105px
-//        top: 40%
-//        right: -20px
-//      &-coin-3
-//        bottom: -25px
-//      &-coin-4
-//        width: 13%
-//        left: initial
-//        right: 90px
-//        top: 40%
-//    &__bottom
-//      bottom: 11px
-//      width: 100%
-//      padding: 0 2.5%
-//      font-size: 10px
-//      line-height: 17px
-//      background: $blue2
-//      &:after
-//        z-index: 1
-//        content: ""
-//        position: absolute
-//        background: linear-gradient(0deg, #01013E 0%, rgba(1, 1, 62, 0.00) 100%)
-//        width: 100%
-//        height: 20px
-//        left: 0
-//        top: -20px
-//
-//@media screen and (max-width: 500px) and (min-height: 930px) and (orientation: portrait)
-//  .fav-page
-//    &__cleo
-//      height: 64%
-//
-//@media screen and (max-width: 500px) and (max-height: 650px) and (orientation: portrait)
-//  .fav-page
-//    &__decor
-//      height: 85%
+@media screen and (min-width: 2500px) and (orientation: landscape)
+  .fav-page
+    &:before
+      width: 3550px
+      height: 3550px
+    &__left
+      margin-left: 11%
+      &-cont
+        transform: scale(1.4)
+        transform-origin: center
+    &__right
+      margin-bottom: 5px
+    &__sem
+      margin-left: -400px
+      width: 155vh
+    &__info
+      bottom: 20px
+      &-item
+        font-size: 20px
+
+@media screen and (min-width: 2000px) and (max-width: 2400px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: 11%
+      &-cont
+        transform: scale(1.1)
+        transform-origin: center
+    &__decor
+      &-coin-1
+        left: -25%
+
+@media screen and (max-width: 1920px) and (max-height: 1080px)and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: 4%
+
+@media screen and (max-width: 1707px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -340px
+
+@media screen and (max-width: 1707px) and (max-height: 800px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-top: 2%
+      margin-left: 2%
+      &-cont
+        height: 80%
+        transform: scale(0.8)
+        transform-origin: center
+    &__decor
+      &-coin-1
+        left: -28%
+      &-coin-2
+        width: 330px
+      &-coin-3
+        width: 100px
+      &-coin-4
+        width: 100px
+        right: 40%
+    &__info
+      &-item
+        font-size: 12px
+
+
+@media screen and (max-width: 1706px) and (min-height: 1000px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        height: 54%
+    &__sem
+      margin-left: -610px
+
+
+@media screen and (max-width: 1680px) and (min-height: 1000px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -500px
+
+@media screen and (max-width: 1600px) and (max-height: 865px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-1
+        left: -22%
+
+
+@media screen and (max-width: 1536px) and (max-height: 864px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.9)
+        transform-origin: center
+    &__info
+      &-item
+        font-size: 12px
+
+@media screen and (max-width: 1536px) and (max-height: 820px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.8)
+        transform-origin: center
+
+@media screen and (max-width: 1536px) and (max-height: 740px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-top: 0
+      &-cont
+        transform: scale(0.75)
+        transform-origin: center
+
+@media screen and (max-width: 1512px) and (orientation: landscape)
+  .fav-page
+    &:before
+      left: -6%
+    &__left
+      &-cont
+        transform: scale(0.85)
+        transform-origin: center
+        height: 75%
+    &__info
+      &-item
+        font-size: 12px
+
+
+@media screen and (max-width: 1470px) and (max-height: 707px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.75)
+        height: 550px
+      &-logo
+        flex-shrink: 0
+    &__bonus
+      flex-shrink: 0
+      &-fc, &-info
+        flex-shrink: 0
+      &-fc
+        margin-bottom: -15px
+    &__btn
+      flex-shrink: 0
+
+@media screen and (max-width: 1470px) and (max-height: 645px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.65)
+    &__decor
+      &-coin-2
+        width: 250px
+        left: -10%
+      &-coin-3
+        width: 80px
+        left: 40px
+      &-coin-4
+        width: 80px
+        right: 30%
+
+@media screen and (max-width: 1440px) and (max-height: 900px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: 0
+      &-cont
+        transform: scale(0.75)
+        transform-origin: center
+    &__sem
+      margin-left: -450px
+    //  width: 96vh
+
+@media screen and (max-width: 1400px) and (orientation: landscape)
+  .fav-page
+    &:before
+      left: -16%
+
+@media screen and (max-width: 1440px) and (max-height: 840px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -335px
+
+@media screen and (max-width: 1376px) and (max-height: 1032px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -20px
+    &__sem
+      margin-left: -530px
+
+
+@media screen and (max-width: 1376px) and (max-height: 913px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -490px
+
+@media screen and (max-width: 1368px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      //width: auto
+      //min-width: 1400px
+      //margin-left: -500px
+      //height: 100%
+      //margin-bottom: auto
+      //display: flex
+      //align-items: flex-end
+      width: auto
+      min-width: 155%
+      margin-left: -500px
+      height: 108%
+      img
+        height: 100%
+        display: block
+        object-fit: contain
+        width: fit-content
+        max-width: none
+    &__decor
+      &-coin-1
+        bottom: -34%
+        left: -40%
+        width: 630px
+
+@media screen and (max-width: 1368px) and (max-height: 768px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -430px
+    &__decor
+      &-coin-1
+        width: 500px
+
+@media screen and (max-width: 1368px) and (max-height: 700px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -380px
+    &__decor
+      &-coin-1
+        left: -30%
+        width: 480px
+
+@media screen and (max-width: 1368px) and (max-height: 640px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.7)
+
+@media screen and (max-width: 1300px) and (orientation: landscape)
+  .fav-page
+    &__info
+      width: 95%
+      &-item
+        font-size: 11px
+        &:nth-child(1)
+          margin-bottom: 8px
+
+@media screen and (max-width: 1305px) and (min-height: 1000px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-1
+        bottom: -30%
+
+@media screen and (max-width: 1280px) and (max-height: 860px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-1
+        width: 500px
+        bottom: -30%
+
+
+@media screen and (max-width: 1280px) and (max-height: 777px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-1
+        left: -20%
+        width: 420px
+        bottom: -25%
+
+@media screen and (max-width: 1280px) and (max-height: 660px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-1
+        width: 400px
+        bottom: -33%
+
+@media screen and (max-width: 1280px) and (max-height: 600px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.6)
+
+@media screen and (max-width: 1259px) and (min-height: 1000px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -56px
+      &-cont
+        transform: scale(0.75)
+
+@media screen and (max-width: 1210px) and (max-height: 760px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -55px
+
+@media screen and (max-width: 1180px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-2
+        width: 290px
+        left: -10%
+      &-coin-3
+        width: 90px
+        left: 40px
+      &-coin-4
+        width: 90px
+        right: 30%
+
+
+@media screen and (max-width: 1180px) and (max-height: 834px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -55px
+      &-cont
+        transform: scale(0.75)
+
+@media screen and (max-width: 1133px) and (max-height: 700px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -60px
+      &-cont
+        transform: scale(0.65)
+    &__sem
+      margin-left: -421px
+
+@media screen and (max-width: 1130px) and (orientation: landscape)
+  .fav-page
+    &__info
+      &-item
+        font-size: 9.5px
+
+
+@media screen and (max-width: 1120px) and (max-height: 834px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -90px
+
+@media screen and (max-width: 1114px) and (max-height: 720px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -70px
+    &__decor
+      &-coin-1
+        bottom: -35%
+
+
+@media screen and (max-width: 1080px) and (orientation: landscape)
+  .fav-page
+    &:before
+      width: 2000px
+      height: 2000px
+
+
+@media screen and (max-width: 1080px) and (max-height: 770px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -90px
+      &-cont
+        transform: scale(0.65)
+    &__sem
+      margin-left: -470px
+
+@media screen and (max-width: 1037px) and (max-height: 768px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -100px
+    &__sem
+      margin-left: -530px
+    &__decor
+      &-coin-1
+        left: -37%
+
+@media screen and (max-width: 1024px) and (max-height: 720px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.6)
+    &__sem
+      margin-left: -480px
+
+@media screen and (max-width: 1010px) and (max-height: 820px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -120px
+      &-cont
+        transform: scale(0.65)
+        height: 87%
+    &__sem
+      margin-left: -550px
+      height: 104%
+    &__decor
+      &-coin-1
+        left: -52%
+
+@media screen and (max-width: 970px) and (orientation: landscape)
+  .fav-page
+    &__info
+      &-item
+        font-size: 8px
+    &__decor
+      &-coin-1
+        bottom: -30%
+
+
+@media screen and (max-width: 970px) and (max-height: 720px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.6)
+    &__sem
+      margin-left: -500px
+
+@media screen and (max-width: 905px) and (max-height: 770px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -150px
+      &-cont
+        transform: scale(0.55)
+
+@media screen and (max-width: 850px) and (orientation: landscape)
+  .fav-page
+    &:before
+      width: 1500px
+      height: 1500px
+
+@media screen and (max-width: 829px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-2
+        width: 210px
+        left: -25%
+      &-coin-3
+        width: 60px
+        left: 10px
+      &-coin-4
+        width: 60px
+        right: 30%
+
+
+@media screen and (max-width: 829px) and (max-height: 690px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -169px
+      &-cont
+        transform: scale(0.5)
+    &__sem
+      margin-left: -530px
+    &__decor
+      &-coin-1
+        left: -50%
+
+@media screen and (max-width: 829px) and (max-height: 540px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -430px
+    &__decor
+      &-coin-1
+        bottom: -45%
+        left: -45%
+
+@media screen and (max-width: 825px) and (orientation: landscape)
+  .fav-page
+    &__info
+      &-item
+        font-size: 7px
+        &:nth-child(1)
+          margin-bottom: 5px
+
+@media screen and (max-width: 720px) and (max-height: 540px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -200px
+      &-cont
+        transform: scale(0.45)
+    &__sem
+      margin-left: -462px
+
+@media screen and (max-width: 715px) and (orientation: landscape)
+  .fav-page
+    &__info
+      &-item
+        font-size: 6px
+
+
+@media screen and (max-width: 708px) and (max-height: 687px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -210px
+      &-cont
+        transform: scale(0.45)
+    &__sem
+      margin-left: -550px
+    &__decor
+      &-coin-1
+        left: -60%
+
+@media screen and (max-width: 691px) and (max-height: 687px) and (orientation: landscape)
+  .fav-page
+    &__left
+      margin-left: -230px
+      &-cont
+        height: 120%
+        transform: scale(0.4)
+    &__sem
+      height: 93%
+      margin-left: -510px
+    &__decor
+      &-coin-1
+        left: -80%
+
+///***************************** Portrait ****************************************/
+@media screen and (max-width: 1300px) and (orientation: portrait)
+  .fav-page
+    &:before
+      width: 1850px
+      height: 1850px
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      animation: spinTab 40s linear infinite
+    &:after
+      bottom: -2px
+      height: 25%
+      background: linear-gradient(0deg, #001954 38.51%, rgba(0, 25, 84, 0.00) 100%)
+    &__main
+      flex-direction: column
+    &__left
+      margin: 30px auto 0
+      height: 100%
+      align-items: flex-start
+      &-cont
+        height: 95%
+        margin-top: 0
+        max-height: 100%
+        justify-content: flex-start
+      &-logo
+        width: 90%
+        min-width: 480px
+    &__bonus
+      margin-top: 25px
+      align-items: center
+      transform: scale(1.4)
+      transform-origin: top
+      &-cont
+        background:  url('../img/block-double.png') no-repeat 50% 50%/cover
+        background-size: 100% 100%
+        flex-direction: row
+        padding-bottom: 0
+        width: 657px
+      &-item
+        &.title
+          font-size: 74px
+          letter-spacing: 1.482px
+          margin-bottom: 20px
+          span
+            font-size: 31px
+            margin: -32px 0 0 8px
+        &.fs, &.info
+          background: none
+          font-size: 52px
+          height: 73px
+          span
+            font-size: 34px
+            margin-right: 12px
+        &.fs
+          padding-right: 30px
+    &__btn
+      transform: scale(1.4)
+      position: absolute
+      bottom: 110px
+    &__left
+      width: 100%
+    &__right
+      position: absolute
+      bottom: 0
+      justify-content: center
+      height: 110%
+    &__sem
+      height: 77%
+      width: auto
+      min-width: 200%
+      display: flex
+      justify-content: center
+      margin: 0 auto
+      img
+        height: 100%
+        width: fit-content
+        display: block
+        object-fit: contain
+    &__decor
+      width: 100%
+      &-coin-1
+        width: 900px
+        bottom: -30%
+        left: -20%
+      &-coin-2
+        width: 450px
+        left: -10%
+        z-index: 4
+      &-coin-3
+        width: 150px
+        left: 120px
+      &-coin-4
+        width: 160px
+        right: 20%
+    &__info
+      width: 95%
+      bottom: 20px
+      &-item
+        font-size: 14px
+        line-height: 19px
+        letter-spacing: -0.12px
+
+@media screen and (max-width: 1300px) and (max-height: 1421px) and (orientation: portrait)
+  .fav-page
+    &__bonus
+      transform: scale(1.1)
+      &-fc
+        font-size: 130px
+        line-height: 130px
+        margin-bottom: 20px
+      &-info
+        font-size: 55px
+        line-height: 55px
+    &__sem
+      height: 73%
+    &__btn
+      transform: scale(1.3)
+    &__info
+      &-item
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: -0.12px
+    &__decor
+      &-coin-1
+        bottom: -40%
+        left: -30%
+
+
+@media screen and (max-width: 1000px) and (orientation: portrait)
+  .fav-page
+    &__left
+      &-logo
+        max-width: 80%
+    &__bonus
+      transform: scale(1)
+    &__btn
+      transform: scale(1)
+      bottom: 80px
+    &__decor
+      &-coin-2
+        left: -50%
+
+@media screen and (max-width: 901px) and (min-height: 1470px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      min-width: 220%
+      padding-left: 65px
+      height: 80%
+    &__decor
+      &-coin-1
+        left: -32%
+
+@media screen and (max-width: 860px) and (min-height: 1280px) and (orientation: portrait)
+  .fav-page
+    &__decor
+      &-coin-1
+        bottom: -45%
+        left: -35%
+
+@media screen and (max-width: 840px) and (max-height: 1200px) and (orientation: portrait)
+  .fav-page
+    &__left
+      &-logo
+        max-width: 482px
+    &__bonus
+      transform: scale(1)
+    &__sem
+      height: 70%
+    &__decor
+      &-coin-1
+        width: 740px
+        bottom: -40%
+        left: -26%
+
+@media screen and (max-width: 830px) and (orientation: portrait)
+  .fav-page
+    &:before
+      width: 1250px
+      height: 1250px
+    &:after
+      height: 33%
+    &__btn
+      bottom: 100px
+    &__decor
+      &-coin-2
+        width: 350px
+        left: -37%
+      &-coin-3
+        width: 120px
+        left: 100px
+      &-coin-4
+        width: 120px
+        right: 20%
+
+@media screen and (max-width: 823px) and (min-height: 1470px) and (orientation: portrait)
+  .fav-page
+    &__decor
+      &-coin-1
+        width: 720px
+        bottom: -30%
+        left: -30%
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait)
+  .fav-page
+    &__decor
+      &-coin-1
+        width: 700px
+        bottom: -40%
+        left: -30%
+
+@media screen and (max-width: 768px) and (max-height: 905px) and (orientation: portrait)
+  .fav-page
+    &__bonus
+      transform: scale(0.8)
+    &__sem
+      height: 67%
+    &__decor
+      &-coin-1
+        width: 600px
+        bottom: -40%
+        left: -25%
+
+@media screen and (max-width: 712px) and (orientation: portrait)
+  .fav-page
+    &__left
+      &-logo
+        width: 60%
+        min-width: inherit
+    &__bonus
+      transform: scale(0.8)
+
+@media screen and (max-width: 690px) and (orientation: portrait)
+  .fav-page
+    &__bonus
+      transform: scale(0.75)
+    &__sem
+      height: 70%
+    &__info
+      bottom: 7px
+      &-item
+        font-size: 11px
+    &__btn
+      bottom: 85px
+    &__decor
+      &-coin-2
+        width: 320px
+        left: -40%
+      &-coin-3
+        width: 100px
+        left: 100px
+      &-coin-4
+        width: 100px
+        right: 20%
+
+@media screen and (max-width: 690px) and (max-height: 691px) and (orientation: portrait)
+  .fav-page
+    &__left
+      &-logo
+        width: 40%
+    &__bonus
+      margin-top: 15px
+      transform: scale(0.65)
+    &__decor
+      &-coin-1
+        width: 500px
+    &__btn
+      bottom: 70px
+    &__info
+      bottom: 7px
+      &-item
+        font-size: 10px
+        &:nth-child(1)
+          margin-bottom: 10px
+
+@media screen and (max-width: 655px) and (max-height: 1317px) and (min-height: 1017px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      height: 90%
+      padding-left: 40px
+      min-width: 220%
+    &__decor
+      &-coin-1
+        bottom: -40%
+        left: -40%
+
+@media screen and (max-width: 655px) and (max-height: 708px) and (orientation: portrait)
+  .fav-page
+    &__info
+      bottom: 7px
+      &-item
+        font-size: 9px
+        line-height: 13px
+        &:nth-child(1)
+          margin-bottom: 7px
+    &__btn
+      bottom: 55px
+
+@media screen and (max-width: 649px) and (max-height: 720px) and (orientation: portrait)
+  .fav-page
+    &__bonus
+      transform: scale(0.6)
+      margin-top: 15px
+    &__left
+      &-logo
+        width: 50%
+    &__decor
+      &-coin-1
+        width: 536px
+        bottom: -45%
+        left: -30%
+
+@media screen and (max-width: 600px) and (min-height: 1000px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      height: 74%
+
+@media screen and (max-width: 540px) and (orientation: portrait)
+  .fav-page
+    &__info
+      bottom: 7px
+      &-item
+        font-size: 9px
+        &:nth-child(1)
+          margin-bottom: 10px
+
+///***************************** Mobile ****************************************/
+@media screen and (max-width: 500px) and (orientation: portrait)
+  .fav-page
+    &:before
+      width: 920px
+      height: 920px
+    &:after
+      bottom: -2px
+      height: 30%
+    &__left
+      margin: 40px auto 0
+      &-logo
+        width: 90%
+        min-width: 234px
+        max-width: 260px
+    &__bonus
+      margin-top: 10px
+      align-items: center
+      transform: scale(1)
+      transform-origin: top
+      &-cont
+        width: 320px
+      &-item
+        &.title
+          font-size: 36px
+          text-shadow: 0 0 21.8px #011954
+          letter-spacing: 0.72px
+          margin-bottom: 9px
+          span
+            font-size: 20px
+            margin: -10px 0 0 2px
+        &.fs, &.info
+          background: none
+          font-size: 25px
+          letter-spacing: 0.5px
+          height: 35px
+          min-height: 35px
+          span
+            font-size: 16px
+            letter-spacing: 0.327px
+            margin-right: 9px
+            margin-top: 8px
+        &.info
+          padding-left: 10px
+        &.fs
+          padding-right: 15px
+    &__btn
+      transform: scale(1)
+      position: absolute
+      min-width: 170px
+      min-height: 40px
+      bottom: 90px
+      border-radius: 6px
+      span
+        font-size: 18px
+      &:before
+        width: 210px
+        height: 210px
+    &__left
+      width: 100%
+    &__right
+      position: absolute
+      bottom: 0
+      justify-content: center
+      height: 110%
+      padding-left: 30px
+    &__sem
+      height: 79%
+      width: auto
+      min-width: 215%
+    &__decor
+      &-coin-1
+        width: 450px
+        bottom: -20%
+        left: -35%
+      &-coin-2
+        width: 200px
+        left: -28%
+        z-index: 4
+      &-coin-3
+        width: 80px
+        left: 15px
+      &-coin-4
+        width: 80px
+        right: 20%
+    &__info
+      width: 90%
+      bottom: 16px
+      &-item
+        font-size: 8px
+        letter-spacing: -0.08px
+        line-height: 12px
+
+@media screen and (max-width: 500px) and (min-height: 890px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      min-width: 240%
+      height: 85%
 //
 //@media screen and (max-width: 500px) and (max-height: 592px) and (orientation: portrait)
 //  .fav-page
 //    &__bonus
 //      transform: scale(0.9)
 //      transform-origin: top
-//
-//
-//@media screen and (max-width: 405px) and (max-height: 678px) and (orientation: portrait)
-//  .fav-page
-//    &__decor
-//      height: 85%
-//
+
+
+@media screen and (max-width: 415px) and (orientation: portrait)
+  .fav-page
+    &__btn
+      bottom: 106px
+    &__decor
+      &-coin-1
+        width: 410px
+        bottom: -20%
+        left: -30%
+
+@media screen and (max-width: 390px) and (orientation: portrait)
+  .fav-page
+    &__left
+      &-logo
+        width: 70%
+    &__decor
+      &-coin-1
+        width: 380px
+
+@media screen and (max-width: 390px) and (max-height: 665px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      min-width: 210%
+      height: 80%
+    &__bonus
+      transform: scale(0.9)
+
+@media screen and (max-width: 390px) and (min-height: 768px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      min-width: 230%
+      height: 85%
+
+@media screen and (max-width: 375px) and (max-height: 600px) and (orientation: portrait)
+  .fav-page
+    &__bonus
+      transform: scale(0.85)
+    &__left
+      margin-top: 25px
+    &__sem
+      height: 75%
+    &__decor
+      &-coin-1
+        width: 320px
+    &__info
+      bottom: 10px
+      &-item
+        font-size: 7px
+        line-height: 10.5px
+        &:nth-child(1)
+          margin-bottom: 4px
+    &__btn
+      bottom: 75px
+
+@media screen and (max-width: 363px) and (orientation: portrait)
+  .fav-page
+    &__decor
+      &-coin-1
+        left: -33%
+
+@media screen and (max-width: 362px) and (max-height: 600px) and (orientation: portrait)
+  .fav-page
+    &__btn
+      bottom: 85px
+
+@media screen and (max-width: 360px) and (max-height: 740px) and (min-height: 700px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      min-width: 220%
+      height: 85%
+    &__decor
+      &-coin-1
+        left: -33%
+
+@media screen and (max-width: 350px) and (max-height: 660px) and (orientation: portrait)
+  .fav-page
+    &__sem
+      min-width: 220%
+      height: 85%
+    &__decor
+      &-coin-1
+        left: -39%
+    &__btn
+      bottom: 117px
+
+@media screen and (max-width: 350px) and (min-height: 800px) and (orientation: portrait)
+  .fav-page
+    &:after
+      height: 40%
+    &__btn
+      bottom: 100px
+
+
 //@media screen and (max-width: 375px) and (max-height: 650px) and (orientation: portrait)
 //  .fav-page
-//    &__cleo
+//    &__sem
 //      height: 58%
-//    &__decor
-//      height: 79%
 //
 //@media screen and (max-width: 375px) and (max-height: 560px) and (orientation: portrait)
 //  .fav-page
 //    &__bonus
 //      transform: scale(0.8)
 //      transform-origin: top
-//
-//@media screen and (max-width: 369px) and (max-height: 768px) and (orientation: portrait)
-//  .fav-page
-//    &__decor
-//      height: 89%
-//
-//@media screen and (max-width: 365px) and (max-height: 800px) and (min-height: 790px) and (orientation: portrait)
-//  .fav-page
-//    &__decor
-//      height: 88%
-//      &-coin-4
-//        top: 30%
-//
-//@media screen and (max-width: 360px) and (max-height: 658px) and (orientation: portrait)
-//  .fav-page
-//    &__decor
-//      height: 80%
 //
 //@media screen and (max-width: 360px) and (max-height: 592px) and (orientation: portrait)
 //  .fav-page
@@ -888,441 +1056,182 @@
 //  .fav-page
 //    &__left
 //      margin-top: 50px
-//    &__cleo
+//    &__sem
 //      height: 55%
 //
 //@media screen and (max-width: 320px) and (orientation: portrait)
 //  .fav-page
-//    &__bottom
-//      font-size: 8.5px
-//      line-height: 15px
-//    &__cleo
+//    &__sem
 //      height: 62%
-//    &__decor
-//      &-coin-4
-//        display: none
 //
 //
 //@media screen and (max-width: 305px) and (max-height: 782px) and (orientation: portrait)
 //  .fav-page
 //    &__right
 //      bottom: 0
-//    &__decor
-//      bottom: 100px
-//      height: 89%
-//      &-coin-4
-//        top: 35%
-//    //&__cleo
-//    //  margin-top: 40px
-//
-//@media screen and (max-width: 280px) and (orientation: portrait)
-//  .fav-page
-//    &__decor
-//      height: 82%
-//
-///***************************** Landscape ****************************************/
-//@media screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape)
-//  .fav-page
-//    &__main
-//      justify-content: center
-//    &__left
-//      animation: fade 2s ease-out forwards
-//      height: 94%
-//      &-cont
-//        transform: scale(0.58)
-//    &__right
-//      margin-left: 135px
-//      justify-content: center
-//    &__cleo
-//      width: 220%
-//      right: initial
-//    &__decor
-//      width: 200%
-//      margin-top: 0
-//      left: -65%
-//      &-chip
-//        &-3
-//          right: 35%
-//      &-coin
-//        &-1
-//          width: 8%
-//        &-2
-//          right: 35%
-//        &-3
-//          right: 20%
-//        &-4
-//          right: 21%
-//    &__bottom
-//      bottom: 10px
-//      font-size: 8px
-//      line-height: 12px
-//      width: 350px
-//
-//@media screen and (max-width: 882px) and (max-height: 350px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      margin-left: 0
-//      &-cont
-//        transform: scale(0.43)
-//    &__cleo
-//      width: 183%
-//    &__decor
-//      width: 170%
-//
-//@media screen and (max-width: 824px) and (max-height: 289px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.38)
-//    &__bottom
-//      font-size: 7px
-//      line-height: 11px
-//      bottom: 5px
-//    &__cleo
-//      width: 165%
-//
-//@media screen and (max-width: 823px) and (min-height: 393px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 240%
-//    &__decor
-//      width: 205%
-//      left: -72%
-//
-//@media screen and (max-width: 750px) and (max-height: 334px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 210%
-//
-//@media screen and (max-width: 746px) and (min-height: 400px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 290%
-//    &__decor
-//      width: 200%
-//      left: -68%
-//
-//@media screen and (max-width: 745px) and (max-height: 500px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.48)
-//    &__bottom
-//      width: 310px
-//      font-size: 7px
-//      line-height: 10px
-//    &__decor
-//      width: 200%
-//      left: -85%
-//
-//@media screen and (max-width: 734px) and (max-height: 340px) and (min-height: 320px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 220%
-//
-//@media screen and (max-width: 712px) and (max-height: 320px) and (orientation: landscape)
-//  .fav-page
-//    &__left
-//      &-cont
-//        transform: scale(0.4)
-//
-//@media screen and (max-width: 667px) and (max-height: 375px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 280%
-//    &__decor
-//      width: 215%
-//      left: -95%
-//
-//@media screen and (max-width: 658px) and (max-height: 320px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 240%
-//    &__bottom
-//      width: 260px
-//      font-size: 6px
-//      line-height: 10px
-//
-//@media screen and (max-width: 568px) and (max-height: 320px) and (orientation: landscape)
-//  .fav-page
-//    &__cleo
-//      width: 280%
-//    &__decor
-//      left: -83%
-//
-///***************************** Footer ****************************************/
-//@media screen and (min-width: 2400px)
-//  .fav-page
-//    &__footer
-//      height: 103px
-//      &-text
-//        max-width: 1630px
-//        font-size: 17px
-//        line-height: 26px
-//      &-info
-//        transform-origin: right center
-//        transform: scale(1.3)
-//
-//@media screen and (max-width: 1675px)
-//  .fav-page
-//    height: calc(100% - 83px)
-//    &__footer
-//      height: 83px
-//      &-text
-//        max-width: 850px
-//        font-size: 12px
-//        line-height: 18px
-//        &-item
-//          font-size: 12px
-//          line-height: 15px
-//      &-info
-//        &-licensed
-//          margin: 0 25px 0 0
-//          &-img
-//            &:not(:last-child)
-//              margin: 0 13px 0 0
-//          &-one
-//            width: 27px
-//          &-two
-//            width: 40px
-//          &-three
-//            width: 39px
-//          &-fourth
-//            width: 27px
-//          &-five
-//            width: 25px
-//        &-buttons
-//          &-apple
-//            width: 80px
-//            margin: 0 8px 0 0
-//          &-google
-//            width: 90px
-//    &__legal
-//      margin-top: 83px
-//
-//@media screen and (max-width: 1345px)
-//  .fav-page
-//    &__footer
-//      padding: 5px 15px
-//      &-text
-//        max-width: 800px
-//
-//@media screen and (max-width: 1300px)
-//  .fav-page
-//    &__footer
-//      height: 90px
-//      &-text
-//        font-size: 11px
-//        line-height: 18px
-//        //max-width: 740px
-//        max-width: 910px
-//        margin: 0 15px 0 0
-//      &-info
-//        display: flex
-//        flex-direction: column
-//        &-licensed
-//          margin: 0 0 15px 0
-//          &-img
-//            &:not(:last-child)
-//              margin: 0 13px 0 0
-//          &-one
-//            width: 24px
-//          &-two
-//            width: 34px
-//          &-three
-//            width: 37px
-//          &-fourth
-//            width: 23px
-//          &-five
-//            width: 24px
-//        &-buttons
-//          &-apple
-//            width: 90px
-//            margin: 0 8px 0 0
-//          &-google
-//            width: 100px
-//
-//@media screen and (max-width: 1170px) and (orientation: portrait)
-//  .fav-page
-//    &__footer
-//      &-text
-//        max-width: 740px
-//
-////tabs
-//
-//@media screen and (max-width: 1050px) and (orientation: portrait)
-//  .fav-page
-//    height:  calc(100% - 100px)
-//    &__footer
-//      padding: 0 20px
-//      height: 100px
-//      &-text
-//        font-size: 11px
-//        line-height: 16px
-//        max-width: 710px
-//    &__legal
-//      font-size: 5.5vw
-//      padding: 0 80px
-//      margin-top: 100px
-//
-//@media screen and (max-width: 950px) and (orientation: portrait)
-//  .fav-page
-//    &__footer
-//      &-text
-//        max-width: 470px
-//
-//@media screen and (max-width: 720px) and (orientation: portrait)
-//  .fav-page
-//    &__footer
-//      &-text
-//          font-size: 10px
-//          line-height: 13px
-//
-//@media screen and (max-width: 590px) and (orientation: portrait)
-//  .fav-page
-//    &__footer
-//      padding: 0 18px
-//      &-text
-//        font-size: 9px
-//        line-height: 11px
-//
-////mobile
-//
-//@media screen and (max-width: 530px) and (orientation: portrait)
-//  .fav-page
-//    height: 100%
-//    &__footer
-//      position: static
-//      min-height: 320px
-//      width: 100%
-//      padding: 25px 0
-//      flex-direction: column-reverse
-//      &-info
-//        margin-bottom: 10px
-//        &-licensed
-//          margin: 0 0 20px 0
-//          &-img
-//            &:not(:last-child)
-//              margin: 0 22px 0 0
-//          &-one
-//            width: 39px
-//          &-two
-//            width: 56px
-//          &-three
-//            width: 60px
-//          &-fourth
-//            width: 38px
-//          &-five
-//            width: 39px
-//        &-buttons
-//          &-apple
-//            width: 145px
-//            margin: 0 13px 0 0
-//          &-google
-//            width: 164px
-//      &-text
-//        font-size: 12px
-//        line-height: 20px
-//        max-width: 321px
-//        margin: 0 auto
-//    &__legal
-//      font-size: 6.9vw
-//      margin-top: 0
-//      padding: 0 10px
-//
-//@media screen and (max-width: 340px) and (orientation: portrait)
-//  .fav-page
-//    &__footer
-//      min-height: 279px
-//      &-info
-//        transform: scale(.9)
-//      &-text
-//        font-size: 11px
-//        line-height: 15px
-//        max-width: 290px
-//
-//@media screen and (max-width: 310px) and (orientation: portrait)
-//  .fav-page
-//    &__footer
-//      min-height: 230px
-//      &-info
-//        transform: scale(.8)
-//      &-text
-//        font-size: 8px
-//        line-height: 11px
-//        max-width: 260px
-//    &__legal
-//      font-size: 6.7vw
-//
-////LANDSCAPE
-//
-//@media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
-//  .fav-page
-//    height: calc(100% - 73px)
-//    &__footer
-//      bottom: 0
-//      padding: 0 15px
-//      height: 75px
-//      &-text
-//        font-size: 10px
-//        line-height: 14px
-//      &-info
-//        transform-origin: right center
-//        transform: scale(0.8)
-//
-//@media screen and (max-width: 824px) and (max-height: 289px) and (orientation: landscape)
-//  .fav-page
-//    height: calc(100% - 60px)
-//    &__footer
-//      height: 60px
-//      &-text
-//        font-size: 9px
-//        line-height: 13px
-//
-//
-//@media screen and (max-width: 765px) and (orientation: landscape)
-//  .fav-page
-//    &__footer
-//      &-text
-//        font-size: 9px
-//        line-height: 12px
-//
-//@media screen and (max-width: 670px) and (orientation: landscape)
-//  .fav-page
-//    &__footer
-//      &-text
-//        &-item
-//          font-size: 8px
-//          line-height: 11px
-//
-//@media screen and (max-width: 640px) and (orientation: landscape)
-//  .fav-page
-//    &__footer
-//      &-text
-//        font-size: 7px
-//        line-height: 13px
-//
-//@media screen and (max-width: 575px) and (orientation: landscape)
-//  .fav-page
-//    &__footer
-//      height: 73px
-//      &-text
-//        &-item
-//          font-size: 7px
-//          line-height: 9px
-//    &__legal
-//      padding-top: 73px
-//
-//@media screen and (max-width: 790px) and (max-height: 305px) and (orientation: landscape)
-//  .fav-page
-//    height: calc(100% - 55px)
-//    &__footer
-//      height: 55px
-//      &-info
-//        transform: scale(.65)
-//      &-text
-//        font-size: 7px
-//        line-height: 12px
-//    &__legal
-//      padding-top: 0
-//      margin-top: 57px
+
+
+/***************************** Landscape ****************************************/
+
+@media screen and (max-width: 950px) and (max-height: 500px) and (orientation: landscape)
+  .fav-page
+    &:before
+      width: 1100px
+      height: 1100px
+      left: -8%
+    &__left
+      margin-top: -20px
+      &-cont
+        transform: scale(0.45)
+    &__decor
+      &-coin-1
+        bottom: -38%
+        left: -32%
+        width: 320px
+      &-coin-2
+        width: 190px
+        left: -40%
+      &-coin-3
+        width: 60px
+        left: 0
+      &-coin-4
+        width: 80px
+        right: 45%
+    &__info
+      bottom: 6px
+      &-item
+        font-size: 7px
+        &:nth-child(1)
+          margin-bottom: 6px
+
+@media screen and (max-width: 882px) and (max-height: 360px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.37)
+    &__right
+      margin-right: 58px
+    &__decor
+      &-coin-1
+        bottom: -52%
+        width: 280px
+      &-coin-2
+        width: 150px
+        left: -40%
+      &-coin-3
+        width: 40px
+        left: 0
+      &-coin-4
+        width: 60px
+        right: 55%
+
+@media screen and (max-width: 844px) and (max-height: 393px) and (orientation: landscape)
+  .fav-page
+    &__decor
+      &-coin-1
+        width: 260px
+        bottom: -43%
+
+@media screen and (max-width: 833px) and (max-height: 500px) and (orientation: landscape)
+  .fav-page
+    &__sem
+      margin-left: -400px
+
+@media screen and (max-width: 825px) and (max-height: 305px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        margin-top: -13%
+        transform: scale(0.3)
+    &__decor
+      &-coin-1
+        width: 210px
+        left: -31%
+    &__right
+      margin-right: 93px
+
+@media screen and (max-width: 715px) and (max-height: 414px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.42)
+    &__decor
+      &-coin-1
+        bottom: -42%
+
+@media screen and (max-width: 715px) and (max-height: 320px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.35)
+    &__right
+      margin-right: 13px
+    &__decor
+      &-coin-1
+        left: -36%
+
+@media screen and (max-width: 720px) and (max-height: 500px) and (orientation: landscape)
+  .fav-page
+    &__info
+      &-item
+        font-size: 6px
+
+@media screen and (max-width: 705px) and (max-height: 280px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        transform: scale(0.3)
+
+@media screen and (max-width: 700px) and (max-height: 375px) and (orientation: landscape)
+  .fav-page
+    &__left
+      &-cont
+        height: 80%
+        transform: scale(0.35)
+    &__sem
+      height: 105%
+
+@media screen and (max-width: 658px) and (max-height: 375px) and (orientation: landscape)
+  .fav-page
+    &__right
+      margin-right: -17px
+    &__decor
+      &-coin-1
+        left: -41%
+        bottom: -48%
+
+@media screen and (max-width: 610px) and (max-height: 500px) and (orientation: landscape)
+  .fav-page
+    &__info
+      &-item
+        font-size: 5px
+        &:nth-child(1)
+          margin-bottom: 4px
+
+/***************************** Footer ****************************************/
+
+@media screen and (max-width: 1170px) and (orientation: portrait)
+
+//tabs
+
+@media screen and (max-width: 1050px) and (orientation: portrait)
+  .fav-page
+    &__legal
+      font-size: 5.5vw
+      padding: 0 80px
+
+//mobile
+
+@media screen and (max-width: 530px) and (orientation: portrait)
+  .fav-page
+    height: 100%
+    &__legal
+      font-size: 6.9vw
+      padding: 0 10px
+
+@media screen and (max-width: 310px) and (orientation: portrait)
+  .fav-page
+    &__legal
+      font-size: 6.7vw
+
+//LANDSCAPE

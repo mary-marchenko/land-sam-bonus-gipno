@@ -17,9 +17,12 @@ body
   overscroll-behavior: none
   background: $blue-back
   img
-    max-width: none
-    width: 100%
+    max-width: 100%
     height: auto
+    @media screen and (min-width: 1369px) and (orientation: landscape)
+      max-width: none
+      width: 100%
+      height: auto
 .main-link
   position: absolute
   width: 100%
@@ -36,7 +39,7 @@ body
   &:before
     content: ''
     position: absolute
-    left: 5%
+    left: 7%
     top: 50%
     transform: translateY(-50%)
     width: 2500px
@@ -50,9 +53,8 @@ body
     height: 30%
     position: absolute
     left: 0
-    bottom: 0
+    bottom: -1px
     z-index: 4
-
   &__main
     display: flex
     z-index: 1
@@ -60,7 +62,7 @@ body
     margin: 0 auto
     justify-content: space-between
   &__left
-    z-index: 4
+    z-index: 5
     //min-width: 695px
     margin-left: 50px
     height: 100%
@@ -119,7 +121,7 @@ body
           margin-top: 15px
           margin-right: 30px
       &.fs
-        font-family: $font-favbet-display-wide
+        font-family: $font-favbet-display-norm
         font-size: 86px
         line-height: 170px
         background:  url('../img/block-blue.png') no-repeat 50% 50%/cover
@@ -128,6 +130,7 @@ body
         height: 124px
         align-self: flex-end
   &__btn
+    z-index: 5
     pointer-events: initial
     position: relative
     display: flex
@@ -139,21 +142,25 @@ body
     border-radius: 10.5px
     transition: .4s ease-in-out
     text-transform: uppercase
-    color: $blue
-    font-size: 32px
-    font-family: $font-roboto-cond
+    span
+      color: $blue
+      font-size: 32px
+      font-family: $font-roboto-cond
+      z-index: 2
     &:hover
       cursor: pointer
       background: $btn-hover
-    &:after
+    &:before
       content: ''
       position: absolute
-      left: -10%
-      top: -200%
+      left: 50%
+      top: 50%
       background: url('../img/star.png') no-repeat 50% 50%/cover
+      transform: translate(-50%, -50%) rotate(0deg)
       width: 368px
       height: 368px
       animation: spinLeft 20s linear infinite
+      z-index: 1
   &__right
     position: relative
     display: flex
@@ -163,7 +170,7 @@ body
   &__sem
     z-index: 3
     width: 150vh
-    margin-left: -290px
+    margin-left: -375px
   &__info
     position: absolute
     bottom: 10px
@@ -190,9 +197,10 @@ body
       position: absolute
       height: auto
     &-coin-1
-      width: 800px
-      bottom: -400px
-      left: -40%
+      //width: 750px
+      width: 70vh
+      bottom: -33%
+      left: -39%
       animation: spin 40s linear infinite
       z-index: 4
     &-coin-2
@@ -203,7 +211,7 @@ body
     &-coin-3
       z-index: 3
       width: 145px
-      left: 0
+      left: -10px
       top: 0
       animation: fall 4s linear infinite
     &-coin-4
@@ -229,11 +237,17 @@ body
   to
     transform: translateY(-50%) rotate(360deg)
 
+@keyframes spinTab
+  from
+    transform: translate(-50%, -50%) rotate(0deg)
+  to
+    transform: translate(-50%, -50%) rotate(360deg)
+
 @keyframes spinLeft
   from
-    transform: rotate(0deg)
+    transform: translate(-50%, -50%) rotate(0deg)
   to
-    transform: rotate(-360deg)
+    transform: translate(-50%, -50%) rotate(-360deg)
 
 @keyframes diagonalRain
   0%
